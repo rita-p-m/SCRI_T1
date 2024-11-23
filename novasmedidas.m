@@ -1,0 +1,9 @@
+x=[1.083454594455658;1.049269975756895;0.994662740285852;-0.872729628433205;0.532276474516978];
+v1=x(1);
+v2=x(2);
+v3=x(3);
+theta2=x(4);
+theta3=x(5);
+g = [3 -2 -1; -2 2 0; -1 0 1];
+b = [-27 18 9; 18 -18 0; 9 0 -9];
+h=[v1; v2; v3; v1*(v1*g(1)+v2*(g(2)*cos(theta2)+b(2)*(-sin(theta2)))+v3*(g(3)*cos(theta3)+b(3)*(-sin(theta3)))); v3*v1*(g(7)*cos(theta3)+b(7)*sin(theta3))-g(7)*v3*v3; v1*v2*((g(2)/2)*cos(theta2)+(b(2)/2)*(-sin(theta2)))-(g(2)/2)*v1*v1; v1*v2*((g(2)/2)*cos(theta2)+(b(2)/2)*(-sin(theta2)))-(g(2)/2)*v1*v1; v1*v2*((g(2)/2)*(-sin(theta2))-(b(2)/2)*cos(theta2))+v1*v1*(b(2)/2); v1*v2*((g(2)/2)*(-sin(theta2))-(b(2)/2)*cos(theta2))+v1*v1*(b(2)/2); v1*v3*(g(3)*(-sin(theta3))-b(3)*cos(theta3))+v1*v1*b(3); v3*v1*(g(7)*sin(theta3)-b(7)*cos(theta3))+v3*v3*b(7)]
